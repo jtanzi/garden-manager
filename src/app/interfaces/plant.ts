@@ -1,9 +1,11 @@
 export interface Plant {
   id: string;
   name: string;
+  description: string;
   tags: PlantTag[];
   favorite: boolean;
-  // TODO - Add planting dates
+  startPlantDate: Date;
+  endPlantDate: Date;
 }
 
 export interface PlantTag {

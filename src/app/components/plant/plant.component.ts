@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Plant, PlantTag } from '../../interfaces/plant';
 
 @Component({
   selector: 'gm-plant',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlantComponent implements OnInit {
 
+  @Input() plant: Plant;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.dir(this.plant);
   }
 
 }

@@ -1,4 +1,5 @@
-<mat-card class="plant-card">
-  <mat-card-title></mat-card-title>
-  <mat-card-content></mat-card-content>
-</mat-card>
+<div fxLayout="column" fxLayoutGap="8px">
+  <gm-plant *ngFor="let plant of plants"
+    [plant]="plant"
+    ></gm-plant>
+</div>

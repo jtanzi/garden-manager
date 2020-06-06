@@ -1,1 +1,8 @@
-<p>plant works!</p>
+<mat-card class="plant-card">
+  <mat-card-title>{{ plant.name }}</mat-card-title>
+  <mat-card-content>
+    <div *ngFor="let tag of plant.tags" class="plant-tag">{{ tag.name }}</div>
+    <div class="plant-description">{{ plant.description }}</div>
+    <div class="plant-plantingdates">{{ plant.startPlantDate }} - {{ plant.endPlantDate }}</div>
+  </mat-card-content>
+</mat-card>
